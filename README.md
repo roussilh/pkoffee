@@ -1,3 +1,6 @@
+[![Test](https://github.com/roussilh/pkoffee/actions/workflows/test_2.yml/badge.svg)](https://github.com/roussilh/pkoffee/actions/workflows/test_2.yml)
+
+
 # PKoffee - Coffee Productivity Analysis
 
 A Conda package implemented in python for analyzing the relationship between coffee consumption and productivity through statistical modeling and visualization.

@@ -1,10 +1,6 @@
 import pytest 
 import numpy as np
 
-
-def test_import():
-    from pkoffee import metrics
-
 def test_size_mismatch_valid():
     from pkoffee.metrics import check_size_match
 
@@ -37,7 +33,7 @@ def test_r2():
 def test_rmse():
     from pkoffee.metrics import compute_rmse
 
-    rng: Generator = np.random.default_rng(seed=0)
+    rng = np.random.default_rng(seed=0)
     y_true: ndarray[tuple[any, ...], dtype[float64]] = rng.normal(size = 10)
     assert compute_rmse(y_true, y_pred=y_true) == 0
 
@@ -47,7 +43,7 @@ def test_rmse():
 def test_mae():
     from pkoffee.metrics import compute_mae
 
-    rng: Generator = np.random.default_rng(seed=0)
+    rng = np.random.default_rng(seed=0)
     y_true: np.ndarray = rng.normal(size=10)
     assert compute_mae(y_true, y_pred =y_true) ==0
 

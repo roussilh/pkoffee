@@ -4,5 +4,5 @@ on: [push]
 jobs: 
   say-hello:
     runs-on: ubuntu-latest
-    step: 
+    steps: 
       - echo "running test on $(( runner.os ))" 

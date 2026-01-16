@@ -23,6 +23,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 
+[tool.pixi.feature.test.tasks]
+test = "pytest"
+
 [project.urls]
 "Homepage" = "https://github.com/s3-school/pkoffee"
 "Bug Tracker" = "https://github.com/s3-school/pkoffee/issues"

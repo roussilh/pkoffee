@@ -34,7 +34,7 @@ def test_rmse():
     from pkoffee.metrics import compute_rmse
 
     rng = np.random.default_rng(seed=0)
-    y_true: ndarray[tuple[any, ...], dtype[float64]] = rng.normal(size = 10)
+    y_true: np.ndarray = rng.normal(size = 10)
     assert compute_rmse(y_true, y_pred=y_true) == 0
 
     y_pred: np.ndarray = np.zeros_like(y_true)
